@@ -20,7 +20,6 @@ public class SaveAddressAndMapping {
 	      session.beginTransaction();
 	      
 	      Employee e = (Employee) session.get(Employee.class, 1l);
-	      	     
 	      Address a = new Address();
 	      a.setId(3l);
 	      a.setName("C galli");

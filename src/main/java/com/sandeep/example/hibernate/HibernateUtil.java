@@ -11,6 +11,8 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import com.sandeep.example.hibernate.entity.Address;
 import com.sandeep.example.hibernate.entity.Employee;
+import com.sandeep.example.hibernate.entity.MarksDetails;
+import com.sandeep.example.hibernate.entity.Student;
 
 /**
  * 
@@ -47,6 +49,8 @@ public class HibernateUtil {
         MetadataSources sources = new MetadataSources(registry);
         sources.addAnnotatedClass(Address.class);
         sources.addAnnotatedClass(Employee.class);
+        sources.addAnnotatedClass(Student.class);
+        sources.addAnnotatedClass(MarksDetails.class);
 
         Metadata metadata = sources.getMetadataBuilder().build();
 
